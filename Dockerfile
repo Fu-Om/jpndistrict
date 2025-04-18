@@ -22,6 +22,6 @@ RUN set -x && \
   chown -R rstudio:rstudio /home/rstudio
 
 RUN set -x && \
-  install2.r --error --ncpus -1 --repos 'https://cran.microsoft.com/snapshot/2021-02-06/' \
+  install2.r --error --ncpus -1 --repos 'https://packagemanager.posit.co/cran/2021-02-05/' \
     renv && \
   rm -rf /tmp/downloaded_packages/ /tmp/*.rds
